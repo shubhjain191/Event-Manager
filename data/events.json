@@ -1,0 +1,11 @@
+[
+  {
+    "id": "d0a47938-8bc0-4e8e-9653-8d752fcba085",
+    "title": "Updated Meeting Title",
+    "description": "Weekly team standup",
+    "start_time": "2025-06-29T10:00:00",
+    "end_time": "2025-06-29T11:00:00",
+    "recurrence": "weekly",
+    "created_at": "2025-06-28T22:04:56.386985"
+  }
+]

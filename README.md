@@ -344,47 +344,6 @@ pytest tests/ --cov=app --cov-report=html
 - ✅ Can delete events
 - ✅ Error handling works for invalid inputs
 
-## Troubleshooting
-
-### Common Issues
-
-#### **Flask Not Found Error**
-```bash
-ModuleNotFoundError: No module named 'flask'
-```
-**Solution:**
-```bash
-# Activate virtual environment
-venv\Scripts\activate
-
-# Install dependencies
-pip install -r requirements.txt
-```
-
-#### **Connection Refused in Postman**
-**Solution:**
-- Ensure Flask app is running (`python app.py`)
-- Check the URL is correct (`http://localhost:5000`)
-- Verify no firewall blocking port 5000
-
-#### **404 Not Found Errors**
-**Solution:**
-- Check the endpoint URL in Postman
-- Ensure the Flask app is running
-- Verify the route exists in the API
-
-#### **500 Internal Server Error**
-**Solution:**
-- Check Flask console for error details
-- Verify JSON format in request body
-- Check for missing required fields
-
-#### **Invalid JSON Errors**
-**Solution:**
-- Ensure `Content-Type: application/json` header is set
-- Check JSON syntax in request body
-- Use proper date format: `2025-01-15T10:00:00`
-
 ### Debug Mode
 The application runs in debug mode by default. Check the console output for detailed error information.
 
@@ -497,10 +456,3 @@ For issues and questions:
 2. Review the test cases in `tests/test_events.py`
 3. Check Flask console output for error details
 4. Verify Postman collection setup
-
-## Version History
-
-- **v1.0.0**: Initial release with CRUD operations
-- **v1.1.0**: Added advanced search and filtering
-- **v1.2.0**: Added background reminder system
-- **v1.3.0**: Added date-based queries and scheduler status
